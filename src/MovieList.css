@@ -1,0 +1,70 @@
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: black;
+    border-color: red;
+    transition: all 1s;
+}
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+.movie-card {
+    width: 200px;
+    text-align: center;
+    background: black;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    color: white;
+}
+input {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: solid;
+    border-color: rgb(255, 0, 0);
+    outline: none;
+    margin-top: 15px;
+    background-color: rgba(14, 8, 8, 0.5);
+    color: white;
+    border-width: 1px;
+}
+
+/* Reduce opacity of all movie cards when hovering inside the container */
+.movie-container:hover .movie-card {
+    opacity: 0.3;
+    transform: scale(0.95);
+}
+
+/* Ensure the hovered movie card stays fully visible and zooms in */
+.movie-card:hover {
+    opacity: 1 !important;
+    transform: scale(1.1) !important;
+    border-style: solid;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px #910c0c;
+}
+
+
+.movie-card h3 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.movie-card p {
+    font-size: 14px;
+    color: #ff0000;
+    margin-top: 5px;
+}
