@@ -34,6 +34,7 @@ function Home(){
                 </div>
                 
                 <Add/>
+           <p>Made by ck. for info contact ckckclare@gmail.com</p>
                 
             
         </div>
