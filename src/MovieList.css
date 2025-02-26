@@ -1,3 +1,11 @@
+/* Prevent horizontal scrolling on the entire page */
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Keep your existing styles */
 .movie-container {
     display: flex;
     flex-wrap: wrap;
@@ -8,6 +16,7 @@
     border-color: red;
     transition: all 1s;
 }
+
 button {
     background-color: red;
     color: white;
@@ -16,7 +25,11 @@ button {
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-  }
+}
+
+button:hover {
+    background-color: #a31515;
+}
 
 .movie-card {
     width: 200px;
@@ -27,6 +40,8 @@ button {
     transition: all 0.5s ease-in-out;
     color: white;
 }
+
+/* Ensure the input box is responsive */
 input {
     width: 100%;
     max-width: 400px;
@@ -42,17 +57,15 @@ input {
     border-width: 1px;
 }
 
-
-
-/* Ensure the hovered movie card stays fully visible and zooms in */
+/* Hover effect for movie cards */
 .movie-card:hover {
     opacity: 1 !important;
-    transform: scale(1.1) !important;
+    transition: all 2s;
+    transform: scale(1.0) !important;
     border-style: solid;
     border-radius: 15px;
-    box-shadow: 2px 2px 2px #910c0c;
+    box-shadow: 1px 2px 2px #910c0c;
 }
-
 
 .movie-card h3 {
     font-size: 16px;
