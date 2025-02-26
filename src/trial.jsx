@@ -156,7 +156,7 @@ function Add() {
           onKeyPress={(e) => e.key === "Enter" && searchMovies(query)}
           style={{ padding: "10px", width: "300px", borderRadius: "5px" }}
         />
-        <button onClick={() => searchMovies(query)}>Search</button>
+        <button className="search" onClick={() => searchMovies(query)}>Search</button>
       </div>
 
       {/* Filter Button */}
