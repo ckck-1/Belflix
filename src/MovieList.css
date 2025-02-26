@@ -20,6 +20,9 @@ body::-webkit-scrollbar{
     border-color: red;
     transition: all 1s;
 }
+.search{
+    margin-left: 2px;
+}
 
 button {
     background-color: red;
