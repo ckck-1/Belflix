@@ -42,11 +42,7 @@ input {
     border-width: 1px;
 }
 
-/* Reduce opacity of all movie cards when hovering inside the container */
-.movie-container:hover .movie-card {
-    opacity: 0.3;
-    transform: scale(0.95);
-}
+
 
 /* Ensure the hovered movie card stays fully visible and zooms in */
 .movie-card:hover {
