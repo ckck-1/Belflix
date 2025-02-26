@@ -13,7 +13,7 @@ function Home(){
                         
                         <h1>BELFLIXX</h1>
                         
-                        <button>Premium</button>
+                        
                     </nav>
                  <div className="Discover">
                    
